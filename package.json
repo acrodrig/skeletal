@@ -1,7 +1,7 @@
 {
   "name": "skeletal",
   "description": "An encompaasing fork for the CSS Skeleton framework",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "private": false,
   "author": {
     "name": "Andres C. Rodriguez",
