@@ -1,5 +1,5 @@
-Skeletal ([§](//acrodrig.github.com/skeletal))
-============================================
+<img src="http://acrodrig.github.io/skeletal/skeleton.png" width="64"> Skeletal
+===============================================================================
 
 An encompassing fork for Skeletal.
 
