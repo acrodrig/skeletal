@@ -1,0 +1,98 @@
+/* Make everything have a saner box sizing model */
+html { box-sizing: border-box; }
+
+/* Title should be visible */
+title { display: block; font-size: 3.0rem; font-weight: bold; font-variant: small-caps; letter-spacing: -1px; margin:0; }
+
+/* Put a border below `h1` and `h2` tags, as it looks nicer, using a slightly darker color than the #E1E1E1 is used for tables and such */
+h1, h2 { border-bottom: 1px solid #D1D1D1; }
+
+/* Skeleton has no hanging indent (SKFIX) */
+ol, ul { padding-left: 1.8ex; list-style-position: outside; }
+
+/* Skeleton provides too much margin (SKFIX) */
+li { margin-bottom: 5px; }
+
+/* Code should scroll right */
+pre > code { overflow: scroll; }
+
+/* Style mage types by hash (very useful for styling Markdown) */
+img[src*='#logo'] { border: 1px solid #EEE; max-height: 100px; max-width: 100px; padding: 5px; }
+img[src*='#avatar'] { border-radius: 50%; max-height: 200px; max-width: 200px; }
+img[src*='#photo'] { background-color: #F6F6F6; border: 1px solid #AAA; box-shadow: 0 0 3px 0 #DDD; max-height: 600px; max-width: 600px; padding: 10px; }
+
+@media(max-width: 550px) {
+    img[src*='#logo'] { max-height: 50px; max-width: 50px; }
+    img[src*='#avatar'] { max-height: 50px; max-width: 50px; }
+    img[src*='#photo'] { max-width: 90%; }
+}
+
+@media(max-width: 750px) {
+    img[src*='#logo'] { max-height: 100px; max-width: 100px; }
+    img[src*='#avatar'] { max-height: 100px; max-width: 100px; }
+    img[src*='#photo'] { max-width: 90%; }
+}
+
+/* Style blockquote since Skeleton has no style (SKFIX) */
+blockquote { border-left: 10px solid #D1D1D1; font-style: italic; padding-left: 10px; }
+
+/* Make borders collapse for tables, male the font and spacing a little smaller */
+table { border-collapse: collapse; font-size: 90%; }
+td { padding: 5px 10px; }
+
+/* Alerts (inspired/taken from https://github.com/nathancahill/skeleton-alerts) */
+.alert { display: block; padding: 20px; border-left: 5px solid; margin: 20px 0; }
+.alert-success { background-color: #D5F5E3; border-left-color: #2ECC71; color: #2ECC71; }
+.alert-info { background-color: #D6EAF8; border-left-color: #3498DB; color: #3498DB; }
+.alert-warning { background-color: #FCF3CF; border-left-color: #F1C40F; color: #F1C40F; }
+.alert-error { background-color: #F2D7D5; border-left-color: #C0392B; color: #C0392B; }
+
+/* Tabs (inspired/taken from https://github.com/nathancahill/skeleton-tabs) */
+/* We make a tab label behave very similar to the way a button behaves, by copying (inheriting) the style */
+ul.tab {
+    border-bottom: 1px solid #BBB;
+    list-style: none;
+    padding-left: 5px;
+}
+ul.tab li { display: inline; }
+ul.tab li > label {
+    background-color: transparent;
+    border: 1px solid #BBB;
+    border-bottom: none;
+    border-radius: 4px 4px 0 0;
+    color: #555;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 600;
+    height: 38px;
+    letter-spacing: .1rem;
+    line-height: 38px;
+    margin-bottom: -1px;
+    padding: 0 30px;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    white-space: nowrap;
+
+    float: top;
+}
+ul.tab li > label:hover {
+    color: #333;
+    border-color: #888;
+    outline: 0;
+}
+ul.tab li > input { display: none; }
+ul.tab li > input:checked + label { border-bottom: 1px solid #FFF; }
+div.pane { display: none; outline: 1px solid red; }
+
+
+/*
+.tab-content .tab-pane {
+    display: none;
+}
+
+.tab-content .tab-pane.active {
+    display: block;
+}
+*/
